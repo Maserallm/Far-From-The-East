@@ -1,7 +1,22 @@
+/* Body config */
+body {
+  margin: 8px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* Background Image w/ parallax effect */
+  /* background-image: url("/images/FullSizeRender-3.jpeg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: calc(100vh - 100px);
+  background-size: minmax(340px, auto);
+  line-height: 1.5rem;
+}
+
 ul {
   list-style: none;
   display: flex;
-  margin-left: -42px;
+  /* margin-left: -42px; */
 }
 
 .cold-media {

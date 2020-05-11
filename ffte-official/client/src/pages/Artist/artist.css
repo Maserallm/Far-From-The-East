@@ -1,3 +1,18 @@
+/* Body config */
+body {
+  margin: 8px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* Background Image w/ parallax effect */
+  /* background-image: url("/images/FullSizeRender-3.jpeg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: calc(100vh - 100px);
+  background-size: minmax(340px, auto);
+  line-height: 1.5rem;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -92,9 +107,9 @@ ul {
   line-height: 1.7rem;
 }
 
-.header_artist_info li {
+/* .header_artist_info li {
   padding-right: 15px;
-}
+} */
 
 .eazy {
   max-width: 100%;
@@ -132,8 +147,9 @@ video {
   /* transform: scale(1); */
 }
 
-.music_content svg {
+#music_content_svg {
   width: 100%;
+  position: unset;
 }
 
 .music_content_item {
@@ -158,6 +174,16 @@ video {
 
 .track_info:hover {
   opacity: 1;
+}
+
+.music_links {
+  list-style: none;
+  display: flex;
+  margin: 0px -30px;
+}
+
+.music_links li {
+  max-width: 200px;
 }
 
 /* .menu_nav {

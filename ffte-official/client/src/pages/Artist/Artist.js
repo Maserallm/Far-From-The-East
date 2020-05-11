@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import eazysign from "../../images/eazysignature01.png";
 import foreverLink from "../../images/foreverlink01.jpg";
 import whynotsnap from "../../images/why not snap.JPG";
+// import applemusic from "../../images/apple-music.svg";
+import Apple from "../../components/SVG/SVG";
+import Spotify from "../../components/SVG/SVG2";
+import Youtube from "../../components/SVG/SVG3";
 import Navbar from "../../components/Navbar/Navbar";
 import styles from "./artist.css";
 import "./artist.css";
@@ -74,6 +79,23 @@ class Artist extends Component {
                         <li>"6. 4ever n ever"</li>
                       </ul>
                     </div>
+                    <ul className="music_links">
+                      <li>
+                        <Link>
+                          <Apple />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link>
+                          <Spotify />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link>
+                          <Youtube />
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
                   <div className="music_content_item">
                     <img src={foreverLink} alt="Forever Link" width="" />
@@ -88,6 +110,23 @@ class Artist extends Component {
                         <li>"6. Big Dawg Link"</li>
                       </ul>
                     </div>
+                    <ul className="music_links">
+                      <li>
+                        <Link>
+                          <Apple />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link>
+                          <Spotify />
+                        </Link>
+                      </li>
+                      <li>
+                        <Link>
+                          <Youtube />
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

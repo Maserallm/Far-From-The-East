@@ -2,14 +2,29 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 // import ffteLogo from "../images/ffte-logo.svg";
 import styles from "./home.css";
+import "./home.css";
 
 class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className={styles.header_wrap}>
+        <div
+          className={styles.header_wrap}
+          style={{ position: "relative", overflow: "hidden" }}
+        >
           <div className="full_screen_wrap">
-            <video id="vid-2" autoPlay={true} loop={true} muted>
+            <video
+              id="vid-2"
+              autoPlay={true}
+              loop={true}
+              muted
+              style={{
+                width: "70vw",
+                height: "110vh",
+                overflow: "hidden",
+                marginLeft: "14%"
+              }}
+            >
               <source
                 type="video/mp4"
                 src="https://woo-videos.s3.us-east-2.amazonaws.com/ffteintro.mov"
@@ -40,7 +55,7 @@ class Home extends Component {
                   id="heading"
                   transform="translate(417.31 593.69) scale(0.96 1)"
                 >
-                  <Link className="artist hvr-grow" to="/artist">
+                  <Link className="artist zoom" to="/artist">
                     <tspan>F</tspan>
                   </Link>
                   <Link className="shop hvr-grow" to="/shop">
