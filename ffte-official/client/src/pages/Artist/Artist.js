@@ -66,7 +66,7 @@ class Artist extends Component {
                     <div className="track_info">
                       <h2>Why Not Snap</h2>
                       <ul>
-                        <li>"1. Crazy Storu Remix"</li>
+                        <li>"1. Crazy Story Remix"</li>
                         <li>"2. To The Ceiling"</li>
                         <li>"3. Big Dawg Assist"</li>
                         <li>"4. Finsway Interlude"</li>
@@ -77,6 +77,17 @@ class Artist extends Component {
                   </div>
                   <div className="music_content_item">
                     <img src={foreverLink} alt="Forever Link" width="" />
+                    <div className="track_info">
+                      <h2>Forever Link</h2>
+                      <ul>
+                        <li>"1. Live From The 863"</li>
+                        <li>"2. Whole Thing"</li>
+                        <li>"3. Down The Way / Can't Relate"</li>
+                        <li>"4. Boomin"</li>
+                        <li>"5. Don't Trust"</li>
+                        <li>"6. Big Dawg Link"</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
