@@ -1,0 +1,238 @@
+ul {
+  list-style: none;
+  display: flex;
+  margin-left: -42px;
+}
+
+.cold-media {
+  margin: 0 1rem;
+  position: relative;
+  right: -60px;
+}
+
+figcaption li {
+  margin: 0 1rem;
+  position: relative;
+  right: -170px;
+}
+
+.header_main {
+  display: grid;
+  gap: 10px;
+  /* grid-template-rows: auto auto auto; */
+}
+
+.header-main h1 {
+  margin: 3rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-ffte {
+  font-family: "montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 45px;
+  margin: 2rem 70px 0;
+  text-align: center;
+}
+
+.about-ffte p {
+  margin: 0 150px;
+}
+
+/* team profiles */
+.team {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+  /* grid-area: "side main side"; */
+}
+
+.team-info {
+  display: grid;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  padding: 5%;
+  line-height: 1.7rem;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 100px;
+  align-items: center;
+}
+
+.team-members img {
+  width: 100%;
+  transition: transform 0.2s;
+  filter: blur(0px);
+  transition: 0.533s;
+}
+
+.team-members img:hover {
+  filter: blur(4px);
+  /* transform: scale(1); */
+}
+
+.contact-ffte {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr;
+}
+
+.contact-ffte > p {
+  grid-column: span 1 / -1;
+}
+
+/* Bottom Page NavBar */
+.menu-nav {
+  display: grid;
+  justify-content: center;
+}
+
+.menu-nav li {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: santos_dumont;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/* Contact Form */
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+input {
+  box-shadow: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  font-size: 16px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  background: transparent;
+  color: rgb(0, 0, 0);
+}
+
+textarea {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark-color(rgb(0, 0, 0));
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: textarea;
+  background-color: -internal-light-dark-color(
+    rgb(71, 70, 70),
+    rgb(59, 59, 59)
+  );
+  -webkit-rtl-ordering: logical;
+  flex-direction: column;
+  resize: auto;
+  cursor: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark-color(
+    rgb(118, 118, 118),
+    rgb(195, 195, 195)
+  );
+  border-image: initial;
+  padding: 2px;
+}
+
+.cpYcEZ {
+  line-height: 1.33;
+  border-top-width: initial;
+  border-right-width: initial;
+  border-left-width: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  padding-bottom: 15px;
+  width: 100%;
+  border-style: none none none;
+  border-image: initial;
+  outline: none;
+}
+
+.eJFNDT {
+  line-height: 1.33;
+  border-top-width: initial;
+  border-right-width: initial;
+  border-left-width: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  padding-bottom: 15px;
+  width: 100%;
+  resize: vertical;
+  min-height: 125px;
+  border-style: none none none;
+  border-image: initial;
+  outline: none;
+}
+
+.cpYcEZ:focus {
+  border-bottom-color: black;
+}
+
+.contact-form {
+  color: whitesmoke;
+}
+
+.cust-form {
+  opacity: 1;
+  pointer-events: auto;
+  margin-bottom: var(--space-1);
+}
+
+.ibSQGl {
+  -webkit-appearance: none;
+  font-weight: 500;
+  color: rgb(90, 48, 242);
+  cursor: pointer;
+  background: none;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+}
+
+[placeholder] {
+  text-align: center;
+}
