@@ -81,19 +81,19 @@ class Artist extends Component {
                     </div>
                     <ul className="music_links">
                       <li>
-                        <Link>
+                        <a href="#">
                           <Apple />
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link>
+                        <a href="#">
                           <Spotify />
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link>
+                        <a href="https://www.youtube.com/playlist?list=PL30TohooSnj0EbBCXkBX_vDMU-jwFkx3u">
                           <Youtube />
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -112,19 +112,19 @@ class Artist extends Component {
                     </div>
                     <ul className="music_links">
                       <li>
-                        <Link>
+                        <a href="https://music.apple.com/us/album/forever-link-ep/1439140729">
                           <Apple />
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link>
+                        <a href="https://open.spotify.com/album/3Ua56fWXUnAr83GApoyAa6">
                           <Spotify />
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link>
+                        <a href="https://www.youtube.com/playlist?list=OLAK5uy_ne0ahSzHrf2V-cn1MFcKLsZOy74MnCwws">
                           <Youtube />
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>

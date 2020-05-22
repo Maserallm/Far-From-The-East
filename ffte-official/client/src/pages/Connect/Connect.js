@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import ContactFrom from "../../components/Contact Form/ContactForm";
 import eazybio from "../../images/eazybio.png";
 import coldbloodlogo from "../../images/coldbloodLOGO.jpg";
 import styles from "./connect.css";
@@ -78,13 +79,14 @@ class Connect extends Component {
                     <img src={eazybio} alt="EAZY" />
                     <figcaption>
                       <ul className="eazy-media">
-                        EAZY | CEO
+                        <p>EAZY | CEO</p>
+
                         <li>
                           <a
                             href="https://www.instagram.com/rcfit7/?hl=en"
                             className="text-dark"
                           >
-                            <i className="fab fa-facebook-f"></i>
+                            <i className="fab fa-instagram"></i>
                           </a>
                         </li>
                         <li>
@@ -94,7 +96,7 @@ class Connect extends Component {
                             href="https://www.instagram.com/rcfit7/?hl=en"
                             className="text-dark"
                           >
-                            <i className="fab fa-instagram"></i>
+                            <i class="fab fa-youtube"></i>
                           </a>
                         </li>
                         <li>
@@ -136,9 +138,7 @@ class Connect extends Component {
                           <a
                             href="https://www.instagram.com/rcfit7/?hl=en"
                             className="text-dark"
-                          >
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
+                          ></a>
                         </li>
                         <li>
                           <a
@@ -168,7 +168,8 @@ class Connect extends Component {
                 <div className="team-members ">
                   <figure>
                     <img
-                      src={coldbloodlogo}
+                      // src={coldbloodlogo}
+                      src="https://s3.amazonaws.com/beatstarsdata/proweb/2.0/user-styles/uploads/184598/footer_logo.png?_=1553916275"
                       alt="ColdBlood"
                       width="100%"
                       height=""
@@ -178,17 +179,9 @@ class Connect extends Component {
                         ColdBlood | Producer, A&R
                         <li className="cold-media">
                           <a
-                            href="https://www.instagram.com/rcfit7/?hl=en"
-                            className="text-dark"
-                          >
-                            <i className="fab fa-facebook-f"></i>
-                          </a>
-                        </li>
-                        <li className="cold-media">
-                          <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="https://www.instagram.com/ColdBloodBeats/"
                             className="text-dark"
                           >
                             <i className="fab fa-instagram"></i>
@@ -198,10 +191,18 @@ class Connect extends Component {
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="https://twitter.com/ColdBloodBeats"
                             className="text-dark"
                           >
                             <i className="fab fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li className="cold-media">
+                          <a
+                            href="https://coldbloodbeats.com/"
+                            className="text-dark"
+                          >
+                            <i class="fas fa-store"></i>
                           </a>
                         </li>
                       </ul>
@@ -216,7 +217,8 @@ class Connect extends Component {
               </div>
             </div>
 
-            <div className="contact-ffte">
+            <ContactFrom />
+            {/* <div className="contact-ffte">
               <p>CONNECT WITH US HERE:</p>
               <div className="social-media"></div>
               <div className="contact-from">
@@ -287,7 +289,7 @@ class Connect extends Component {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
 
             {/* <!-- Bottom Page Nav Bar --> */}
             <Navbar />
