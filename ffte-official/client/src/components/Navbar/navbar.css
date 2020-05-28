@@ -5,10 +5,15 @@
   font-weight: normal;
   font-style: normal;
 }
+.wrapper {
+  display: block;
+}
 
 .menu_nav {
   display: grid;
   justify-content: center;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .menu_nav li {
@@ -25,4 +30,13 @@
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+}
+
+@media (max-width: 703px) {
+  .menu_nav {
+    display: grid;
+    justify-content: none;
+    overflow: auto;
+    white-space: nowrap;
+  }
 }

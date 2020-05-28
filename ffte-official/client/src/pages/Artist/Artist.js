@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import eazysign from "../../images/eazysignature01.png";
 import foreverLink from "../../images/foreverlink01.jpg";
 import whynotsnap from "../../images/why not snap.JPG";
@@ -80,7 +80,7 @@ class Artist extends Component {
                       </ul>
                     </div>
                     <ul className="music_links">
-                      <li>
+                      {/* <li>
                         <a href="#">
                           <Apple />
                         </a>
@@ -89,8 +89,8 @@ class Artist extends Component {
                         <a href="#">
                           <Spotify />
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      <li id="why_not_link">
                         <a href="https://www.youtube.com/playlist?list=PL30TohooSnj0EbBCXkBX_vDMU-jwFkx3u">
                           <Youtube />
                         </a>

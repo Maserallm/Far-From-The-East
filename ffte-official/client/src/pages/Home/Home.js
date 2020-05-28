@@ -17,6 +17,7 @@ class Home extends Component {
               id="vid-2"
               autoPlay={true}
               loop={true}
+              playsInline
               muted
               style={{
                 width: "70vw",
@@ -58,11 +59,19 @@ class Home extends Component {
                   <Link className="artist zoom" to="/artist">
                     <tspan>F</tspan>
                   </Link>
+                  {/* <g>
+                  <text
+                    className="cls-1 zoom"
+                    id="heading"
+                    transform="translate(417.31 593.69) scale(0.96 1)"
+                  > */}
                   <Link className="shop hvr-grow" to="/shop">
                     <tspan className="cls-2" x="263.83" y="0">
                       F
                     </tspan>
                   </Link>
+                  {/* </text>
+                </g> */}
                   <a href="http://ffteblog.com/" className="blog hvr-grow">
                     <tspan className="cls-3" x="548.24" y="0">
                       T
@@ -107,7 +116,7 @@ class Home extends Component {
                     </tspan>
                   </text>
                 </Link>
-                <Link to="http://ffteblog.com/" className="blog hvr-grow">
+                <a href="http://ffteblog.com/" className="blog hvr-grow">
                   <text
                     className="cls-4"
                     transform="translate(1023.71 705.91) scale(0.96 1)"
@@ -121,7 +130,7 @@ class Home extends Component {
                       e
                     </tspan>
                   </text>
-                </Link>
+                </a>
                 <Link className="contact hvr-grow" to="/connect">
                   <text
                     className="cls-4"

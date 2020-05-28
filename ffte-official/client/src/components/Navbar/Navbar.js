@@ -23,11 +23,11 @@ const Navbar = () => {
                 <h2>SHOP</h2>
               </li>
             </Link>
-            <Link className="zoom" to="https://ffteblog.com">
+            <a className="zoom" href="https://ffteblog.com">
               <li>
                 <h2>BLOG</h2>
               </li>
-            </Link>
+            </a>
             <Link className="zoom" to="/connect">
               <li>
                 <h2>CONNECT</h2>

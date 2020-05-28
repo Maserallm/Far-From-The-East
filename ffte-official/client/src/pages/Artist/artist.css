@@ -172,14 +172,19 @@ video {
   display: grid;
 }
 
-.track_info:hover {
+/* .track_info:hover {
   opacity: 1;
-}
+} */
 
 .music_links {
   list-style: none;
   display: flex;
   margin: 0px -30px;
+  justify-content: center;
+}
+
+#why_not_link {
+  padding-right: 15px;
 }
 
 .music_links li {
@@ -206,3 +211,18 @@ video {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 } */
+
+@media (max-width: 630px) {
+  .cover img {
+    width: 350px;
+  }
+
+  #music_content_svg {
+    width: 100%;
+    position: unset;
+  }
+
+  #why_not_link {
+    padding-right: 15px;
+  }
+}

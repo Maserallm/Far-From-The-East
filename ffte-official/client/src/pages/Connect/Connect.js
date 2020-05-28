@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import ContactFrom from "../../components/Contact Form/ContactForm";
 import eazybio from "../../images/eazybio.png";
+import eazystate from "../../images/eazystatement01.PNG";
+// import b5 from "../../images/b5_main_photo.png";
+import b5statement from "../../images/b5statement.PNG";
 import coldbloodlogo from "../../images/coldbloodLOGO.jpg";
+import coldbloodstatement from "../../images/coldbloodstatement.PNG";
 import styles from "./connect.css";
 import "./connect.css";
 
@@ -11,10 +15,19 @@ class Connect extends Component {
     name: "",
     message: "",
     email: "",
+    subject: "",
     buttonText: "Send Message",
     sent: false,
     result: "",
     error: ""
+  };
+
+  onChange = e => {
+    // const target = e.target;
+    // const value = target.value;
+    // const nom = target.name;
+
+    this.setState({ [e.target.name]: e.target.value });
   };
 
   formSubmit = e => {
@@ -23,11 +36,11 @@ class Connect extends Component {
       buttonText: "...sending"
     });
 
-    let mailer = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message
-    };
+    //   let mailer = {
+    //     name: this.state.name,
+    //     email: this.state.email,
+    //     message: this.state.message
+    //   };
   };
 
   //   API.send({ mailer })
@@ -83,7 +96,7 @@ class Connect extends Component {
 
                         <li>
                           <a
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="https://www.instagram.com/eazyffte/?hl=en"
                             className="text-dark"
                           >
                             <i className="fab fa-instagram"></i>
@@ -93,17 +106,17 @@ class Connect extends Component {
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="https://www.youtube.com/channel/UCk6xUPzFEHY6TkigqCL-5Iw"
                             className="text-dark"
                           >
-                            <i class="fab fa-youtube"></i>
+                            <i className="fab fa-youtube"></i>
                           </a>
                         </li>
                         <li>
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="https://twitter.com/Eazy_FFTE"
                             className="text-dark"
                           >
                             <i className="fab fa-twitter"></i>
@@ -112,18 +125,10 @@ class Connect extends Component {
                       </ul>
                     </figcaption>
                   </figure>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Officia molestias eaque quisquam assumenda perferendis
-                    blanditiis aliquid minima necessitatibus cumque dignissimos.
-                  </p>
+                  <img src={eazystate} alt="Eazy Statement" />
                 </div>
                 <div className="team-members ">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Enim reprehenderit cupiditate praesentium quae, fuga quod
-                    numquam suscipit accusantium? Quis, natus!
-                  </p>
+                  <img src={b5statement} alt="Words from 5" />
                   <figure>
                     <img
                       src="https://woo-videos.s3.us-east-2.amazonaws.com/FFTE+ORIGINALS+B5+01.png"
@@ -136,15 +141,9 @@ class Connect extends Component {
                         B5 | CEO
                         <li>
                           <a
-                            href="https://www.instagram.com/rcfit7/?hl=en"
-                            className="text-dark"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="https://instagram.com/b5_ffte?igshid=1xkr25zidzsyp"
                             className="text-dark"
                           >
                             <i className="fab fa-instagram"></i>
@@ -154,10 +153,10 @@ class Connect extends Component {
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
-                            href="https://www.instagram.com/rcfit7/?hl=en"
+                            href="mailto:B5ffte@gmail.com"
                             className="text-dark"
                           >
-                            <i className="fab fa-twitter"></i>
+                            <i className="fas fa-envelope"></i>
                           </a>
                         </li>
                       </ul>
@@ -169,7 +168,7 @@ class Connect extends Component {
                   <figure>
                     <img
                       // src={coldbloodlogo}
-                      src="https://s3.amazonaws.com/beatstarsdata/proweb/2.0/user-styles/uploads/184598/footer_logo.png?_=1553916275"
+                      src={coldbloodlogo}
                       alt="ColdBlood"
                       width="100%"
                       height=""
@@ -202,94 +201,27 @@ class Connect extends Component {
                             href="https://coldbloodbeats.com/"
                             className="text-dark"
                           >
-                            <i class="fas fa-store"></i>
+                            <i className="fas fa-store"></i>
                           </a>
                         </li>
                       </ul>
                     </figcaption>
                   </figure>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Enim reprehenderit cupiditate praesentium quae, fuga quod
-                    numquam suscipit accusantium? Quis, natus!
-                  </p>
+                  <img src={coldbloodstatement} alt="col blood statement" />
                 </div>
               </div>
             </div>
 
-            <ContactFrom />
-            {/* <div className="contact-ffte">
-              <p>CONNECT WITH US HERE:</p>
-              <div className="social-media"></div>
-              <div className="contact-from">
-                <form
-                  className="contact-form cust-form"
-                  onSubmit={e => this.formSubmit(e)}
-                  method="POST"
-                  action="send"
-                >
-                  <div>
-                    <label className="message-name" htmlFor="message-name">
-                      Your Name
-                    </label>
-                    <input
-                      onChange={e => this.setState({ name: e.target.value })}
-                      name="name"
-                      className="message-name cpYcEZ border-bottom"
-                      type="text"
-                      placeholder="Your Name"
-                      value={this.state.name}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="message-email" htmlFor="message-email">
-                      Your Email
-                    </label>
-                    <input
-                      onChange={e => this.setState({ email: e.target.value })}
-                      name="email"
-                      className="message-email cpYcEZ border-bottom"
-                      type="email"
-                      placeholder="your@email.com"
-                      required
-                      value={this.state.email}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="message" htmlFor="message-input">
-                      Your Message
-                    </label>
-                    <textarea
-                      onChange={e => this.setState({ message: e.target.value })}
-                      cols="20"
-                      rows="10"
-                      name="message"
-                      className="message-input eJFNDT border-bottom"
-                      type="text"
-                      placeholder="Please write your message here"
-                      value={this.state.message}
-                      required
-                    />
-                  </div>
-
-                  <div className="button-container">
-                    <button
-                      type="submit"
-                      className="button button-primary ibSQGl"
-                    >
-                      {this.state.buttonText}
-                    </button>
-                    {this.state.result ? (
-                      <small>{this.state.result}</small>
-                    ) : (
-                      ""
-                    )}
-                  </div>
-                </form>
-              </div>
-            </div> */}
+            <ContactFrom
+              name={this.state.name}
+              email={this.state.email}
+              message={this.state.message}
+              button={this.state.buttonText}
+              subject={this.state.subject}
+              result={this.state.result}
+              formSubmit={this.formSubmit}
+              onChange={this.onChange}
+            />
 
             {/* <!-- Bottom Page Nav Bar --> */}
             <Navbar />
