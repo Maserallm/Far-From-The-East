@@ -5,7 +5,7 @@ import Home from "./pages/Home/Home";
 import Artist from "./pages/Artist/Artist";
 import Connect from "./pages/Connect/Connect";
 import Shop from "./pages/Shop/Shop";
-import "./App.css";
+
 // import Navbar from "./components/Navbar/Navbar";
 
 function App() {
