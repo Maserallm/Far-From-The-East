@@ -5,6 +5,8 @@ import Home from "./pages/Home/Home";
 import Artist from "./pages/Artist/Artist";
 import Connect from "./pages/Connect/Connect";
 import Shop from "./pages/Shop/Shop";
+import Navbar from "./components/Navbar/Navbar";
+import "./App.css";
 
 // import Navbar from "./components/Navbar/Navbar";
 
@@ -27,9 +29,7 @@ function App() {
         <Connect />
       </Route>
 
-      {/* <Navbar
-        className={window.location.pathname === "/" || "/home" ? "no_nav" : ""}
-      /> */}
+      <Navbar />
     </Router>
   );
 }

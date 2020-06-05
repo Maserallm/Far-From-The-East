@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   min-height: calc(100vh - 100px);
-  background-size: minmax(340px, auto);
+  /* background-size: minmax(340px, auto); */
   line-height: 1.5rem;
 }
 
@@ -60,7 +60,8 @@ figcaption li {
 .team {
   margin: 1rem 0;
   display: grid;
-  grid-template-columns: 1fr 12fr 1fr;
+  grid-template-rows: 1fr;
+  /* grid-template-rows: 1fr 12fr 1fr; */
   /* grid-area: "side main side"; */
 }
 
@@ -69,7 +70,7 @@ figcaption li {
   gap: 20px;
   justify-content: start;
   align-items: center;
-  padding: 5%;
+  /* padding: 5%; */
   line-height: 1.7rem;
 }
 
@@ -124,7 +125,7 @@ figcaption li {
 
 .contact-ffte {
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: auto;
 }
 
 .contact-ffte > p {
@@ -262,6 +263,46 @@ textarea {
   outline: 0px;
 }
 
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: black;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
 .button-container {
   margin: 0px 20rem;
 }
@@ -276,13 +317,29 @@ textarea {
   .header-main {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
+    overflow-inline: auto;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .eazy-media {
+    list-style: none;
+    display: flex;
+    margin-left: -70px;
   }
 
   .contact-ffte {
     display: grid;
     grid-template-rows: auto;
-    justify-content: center;
+  }
+
+  .contact-form {
+    margin: 0;
   }
 
   .wrapper {
@@ -294,11 +351,12 @@ textarea {
     justify-content: start;
     overflow: auto;
     white-space: nowrap;
-    width: 110%;
+    width: 80%;
+    margin: 2rem 0;
   }
 
   #music_content_svg {
-    width: 100px;
+    width: 100%;
     position: unset;
   }
 }

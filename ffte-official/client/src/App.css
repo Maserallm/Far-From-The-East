@@ -14,7 +14,7 @@ html {
 /* Body config */
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* overflow-y: hidden; */
   /* Background Image w/ parallax effect */
   /* background-image: url("/images/FullSizeRender-3.jpeg"); */
@@ -36,10 +36,10 @@ a {
 a:hover,
 a:active,
 a:link,
-a:visited {
+/* a:visited {
   text-decoration: none;
   background-color: white;
-}
+} */
 
 a:active,
 a:focus {
