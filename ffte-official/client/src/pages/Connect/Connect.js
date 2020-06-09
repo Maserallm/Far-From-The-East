@@ -10,17 +10,6 @@ import coldbloodstatement from "../../images/coldbloodstatement.PNG";
 import "./connect.css";
 
 const Connect = () => {
-  // const onChange = e => {
-  //   // const target = e.target;
-  //   // const value = target.value;
-  //   // const nom = target.name;
-
-  //   setName(e.target.value);
-  //   setEmail(e.target.value);
-  //   setMessage(e.target.value);
-  //   setSubject(e.target.value);
-  // };
-
   //   let mailer = {
   //     name: this.state.name,
   //     email: this.state.email,

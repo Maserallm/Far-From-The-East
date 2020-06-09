@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route /* Redirect*/ } from "react-router-dom";
-// import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Artist from "./pages/Artist/Artist";
 import Connect from "./pages/Connect/Connect";
 import Shop from "./pages/Shop/Shop";
+import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
@@ -13,22 +13,13 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <Route exact path="/">
-        <Home />
-      </Route>
-
-      <Route exact path="/artist">
-        <Artist />
-      </Route>
-
-      <Route exact path="/shop">
-        <Shop />
-      </Route>
-
-      <Route exact path="/connect">
-        <Connect />
-      </Route>
-
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/artist" component={Artist} />
+        <Route exact path="/shop" component={Shop} />
+        <Route exact path="/connect" component={Connect} />
+        <Route component={NotFound} />
+      </Switch>
       <Navbar />
     </Router>
   );
