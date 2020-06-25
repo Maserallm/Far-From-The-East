@@ -1,17 +1,17 @@
 /* Body config */
-body {
+/* body {
   margin: 8px;
   overflow-x: hidden;
-  overflow-y: scroll;
-  /* Background Image w/ parallax effect */
-  /* background-image: url("/images/FullSizeRender-3.jpeg"); */
-  background-repeat: no-repeat;
+  overflow-y: scroll; */
+/* Background Image w/ parallax effect */
+/* background-image: url("/images/FullSizeRender-3.jpeg"); */
+/* background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  min-height: calc(100vh - 100px);
-  /* background-size: minmax(340px, auto); */
-  line-height: 1.5rem;
-}
+  min-height: calc(100vh - 100px); */
+/* background-size: minmax(340px, auto); */
+/* line-height: 1.5rem;
+} */
 
 ul {
   list-style: none;
@@ -330,7 +330,7 @@ textarea {
   .eazy-media {
     list-style: none;
     display: flex;
-    margin-left: -70px;
+    margin-left: 30px;
   }
 
   .contact-ffte {
@@ -358,5 +358,32 @@ textarea {
   #music_content_svg {
     width: 100%;
     position: unset;
+  }
+}
+
+@media (max-width: 540px) {
+  .eazy-media {
+    list-style: none;
+    display: flex;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin: 0 9.5rem;
+  }
+
+  .header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .eazy-media {
+    list-style: none;
+    display: flex;
+    margin-left: 0px;
   }
 }

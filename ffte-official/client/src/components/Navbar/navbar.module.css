@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .wrapper {
   display: block;
 }
@@ -35,8 +36,15 @@
 @media (max-width: 703px) {
   .menu_nav {
     display: grid;
-    justify-content: none;
+    justify-content: start;
     overflow: auto;
     white-space: nowrap;
+    width: 91%;
+    margin: 2rem 0;
+  }
+
+  .list {
+    margin-left: 0;
+    padding-left: 0;
   }
 }

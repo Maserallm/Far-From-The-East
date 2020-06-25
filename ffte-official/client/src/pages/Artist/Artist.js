@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 // import { Link } from "react-router-dom";
 import eazysign from "../../images/eazysignature01.png";
 import foreverLink from "../../images/foreverlink01.jpg";
@@ -8,36 +8,36 @@ import sumthing2hold from "../../images/sumthing2holdfornow_ep.jpg";
 import Apple from "../../components/SVG/SVG";
 import Spotify from "../../components/SVG/SVG2";
 import Youtube from "../../components/SVG/SVG3";
-import styles from "./artist.css";
-import "./artist.css";
+import artist from "./artist.module.css";
+import "./artist.module.css";
 
 const Artist = () => {
   return (
-    <React.Fragment>
-      <div className={styles.container}>
+    <Fragment>
+      <div>
         {/* <!-- Header menu and artist photo --> */}
-        <div className="header_main">
-          <div className="menu"></div>
+        <div className={artist.header_main}>
+          {/* <div className="menu"></div> */}
 
           {/* <!-- Header Landing Cover --> */}
-          <div className="out_cover">
-            <div className="cover">
+          <div className={artist.out_cover}>
+            <div className={artist.cover}>
               <img src={eazysign} alt="Eazy Signature" />
             </div>
           </div>
 
           {/* <!-- Artist Profile --> */}
-          <div className="header_artist_photo">
-            <div className="sidebar"></div>
-            <div className="header_artist_info">
+          <div className={artist.header_artist_photo}>
+            <div className={artist.sidebar}></div>
+            <div className={artist.header_artist_info}>
               <div>
                 <img
                   src="https://woo-videos.s3.us-east-2.amazonaws.com/eazycover.jpeg"
                   alt="EAZY"
-                  className="eazy"
+                  className={artist.eazy}
                 />
               </div>
-              <div className="bio">
+              <div className={artist.bio}>
                 <h4>EAZY</h4>
                 <p>
                   Looking into the past of Eazy’s musical journey, 2018-2019
@@ -63,82 +63,81 @@ const Artist = () => {
                   soon.
                 </p>
               </div>
-              <div className="music_content">
-                <div className="music_content_item">
+              <div className={artist.music_content}>
+                <div className={artist.music_content_item}>
                   <img src={sumthing2hold} alt="Sumthing 2 Hold For Now" />
-                  <div className="track_info">
-                    <h2>Sumthing 2 Hold For Now</h2>
-                    <ul>
-                      <li>"1. Crazy Story Remix"</li>
-                      <li>"2. To The Ceiling"</li>
-                      <li>"3. Big Dawg Assist"</li>
-                    </ul>
-                  </div>
-                  <ul className="music_links">
+                  <ul className={artist.music_links}>
                     <li>
-                      <a href="https://music.apple.com/us/album/forever-link-ep/1439140729">
+                      <a
+                        href="https://music.apple.com/us/album/forever-link-ep/1439140729"
+                        target="_blank"
+                        rel="noopener noreferrer" // eslint-disable-next-line
+                      >
+                        {/* eslint-disable-next-line*/}
                         <Apple />
                       </a>
                     </li>
                     <li>
-                      <a href="https://open.spotify.com/album/3Ua56fWXUnAr83GApoyAa6">
+                      <a
+                        href="https://open.spotify.com/album/3Ua56fWXUnAr83GApoyAa6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Spotify />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/playlist?list=OLAK5uy_ne0ahSzHrf2V-cn1MFcKLsZOy74MnCwws">
+                      <a
+                        href="https://www.youtube.com/playlist?list=OLAK5uy_ne0ahSzHrf2V-cn1MFcKLsZOy74MnCwws"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Youtube />
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div className="music_content_item">
+                <div className={artist.music_content_item}>
                   <img src={whynotsnap} alt="Why Not Snap" />
-                  <div className="track_info">
-                    <h2>Why Not Snap</h2>
-                    <ul>
-                      <li>"1. Crazy Story Remix"</li>
-                      <li>"2. To The Ceiling"</li>
-                      <li>"3. Big Dawg Assist"</li>
-                      <li>"4. Finsway Interlude"</li>
-                      <li>"5. Tab Fanmi"</li>
-                      <li>"6. 4ever n ever"</li>
-                    </ul>
-                  </div>
-                  <ul className="music_links">
+                  <ul className={artist.music_links}>
                     <li id="why_not_link">
-                      <a href="https://www.youtube.com/playlist?list=PL30TohooSnj0EbBCXkBX_vDMU-jwFkx3u">
+                      <a
+                        href="https://www.youtube.com/playlist?list=PL30TohooSnj0EbBCXkBX_vDMU-jwFkx3u"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Youtube />
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div className="music_content_item">
+                <div className={artist.music_content_item}>
                   <img src={foreverLink} alt="Forever Link" width="" />
-                  <div className="track_info">
-                    <h2>Forever Link</h2>
-                    <ul>
-                      <li>"1. Live From The 863"</li>
-                      <li>"2. Whole Thing"</li>
-                      <li>"3. Down The Way / Can't Relate"</li>
-                      <li>"4. Boomin"</li>
-                      <li>"5. Don't Trust"</li>
-                      <li>"6. Big Dawg Link"</li>
-                    </ul>
-                  </div>
-                  <ul className="music_links">
+                  <ul className={artist.music_links}>
                     <li>
-                      <a href="https://music.apple.com/us/album/forever-link-ep/1439140729">
+                      <a
+                        href="https://music.apple.com/us/album/forever-link-ep/1439140729"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Apple />
                       </a>
                     </li>
                     <li>
-                      <a href="https://open.spotify.com/album/3Ua56fWXUnAr83GApoyAa6">
+                      <a
+                        href="https://open.spotify.com/album/3Ua56fWXUnAr83GApoyAa6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Spotify />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.youtube.com/playlist?list=OLAK5uy_ne0ahSzHrf2V-cn1MFcKLsZOy74MnCwws">
+                      <a
+                        href="https://www.youtube.com/playlist?list=OLAK5uy_ne0ahSzHrf2V-cn1MFcKLsZOy74MnCwws"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Youtube />
                       </a>
                     </li>
@@ -149,7 +148,7 @@ const Artist = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

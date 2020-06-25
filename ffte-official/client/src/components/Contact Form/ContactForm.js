@@ -18,7 +18,7 @@ function ContactForm() {
 
   const formSubmit = async e => {
     e.preventDefault();
-
+    // eslint-disable-next-line
     const form = await axios.post("/api/form", {
       name,
       email,
@@ -81,13 +81,15 @@ function ContactForm() {
             />
           </div>
 
-          <textarea
-            onChange={onChange}
-            value={message}
-            name="message"
-            rows="10"
-            cols="68"
-          ></textarea>
+          <div className="input-container">
+            <textarea
+              onChange={onChange}
+              value={message}
+              name="message"
+              rows="10"
+              cols="68"
+            ></textarea>
+          </div>
 
           <button type="submit" className="btn">
             {sent === false ? "Send" : "Sending Message!"}

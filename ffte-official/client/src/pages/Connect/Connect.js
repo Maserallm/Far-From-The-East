@@ -10,28 +10,6 @@ import coldbloodstatement from "../../images/coldbloodstatement.PNG";
 import "./connect.css";
 
 const Connect = () => {
-  //   let mailer = {
-  //     name: this.state.name,
-  //     email: this.state.email,
-  //     message: this.state.message
-  //   };
-
-  //   API.send({ mailer })
-  //     .then(res => {
-  //       if (res.data.message) {
-  //         this.setState(
-  //           { sent: true, result: res.data.message },
-  //           this.resetForm()
-  //         );
-  //       } else {
-  //         this.setState({ error: "Message did not send." });
-  //       }
-  //     })
-  //     .catch(() => {
-  //       console.log("Message not sent");
-  //     });
-  // };
-
   // eslint-disable-next-line
   const resize = () => {
     // eslint-disable-next-line
@@ -65,6 +43,8 @@ const Connect = () => {
                         <a
                           href="https://www.instagram.com/eazyffte/?hl=en"
                           className="text-dark"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i className="fab fa-instagram"></i>
                         </a>
@@ -95,7 +75,7 @@ const Connect = () => {
                 <img src={eazystate} alt="Eazy Statement" />
               </div>
               <div className="team-members ">
-                {window.innerWidth < 704 ? (
+                {window.innerWidth < 769 ? (
                   <Fragment>
                     <figure>
                       <img
@@ -208,6 +188,8 @@ const Connect = () => {
                         <a
                           href="https://coldbloodbeats.com/"
                           className="text-dark"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i className="fas fa-store"></i>
                         </a>

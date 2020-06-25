@@ -1,18 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
+import ShopStyles from "./shop.module.css";
 
 const Shop = () => {
   return (
-    <React.Fragment>
-      <h1 style={header}>OFFICIAL FFTE SHOP</h1>
-      <p style={header}>The Latest Drops From the Ends.</p>
-    </React.Fragment>
+    <Fragment>
+      <div className={ShopStyles.container_}>
+        <h1 className={ShopStyles.header1}>OFFICIAL FFTE SHOP</h1>
+        <p className={ShopStyles.header2}>The Latest Drops From the Ends.</p>
+        <h3 className={ShopStyles.fwStyle}>FALL / WINTER 2020</h3>
+      </div>
+    </Fragment>
   );
-};
-
-const header = {
-  display: "grid",
-  gridTemplateColumns: "1fr",
-  textAlign: "center"
 };
 
 export default Shop;

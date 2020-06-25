@@ -147,7 +147,7 @@ video {
   /* transform: scale(1); */
 }
 
-#music_content_svg {
+.music_content_svg {
   width: 100%;
   position: unset;
 }
@@ -212,12 +212,25 @@ video {
   transform: scale(1.5);
 } */
 
-@media (max-width: 630px) {
+@media (max-width: 703px) {
+  .header_main {
+    width: fit-content;
+  }
+
+  .out_cover {
+    margin: auto;
+  }
+
   .cover img {
     width: 350px;
   }
-
-  #music_content_svg {
+  .music_content {
+    margin-top: 2rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .music_content_svg {
     width: 100%;
     position: unset;
   }
