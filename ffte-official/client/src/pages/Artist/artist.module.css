@@ -1,0 +1,241 @@
+/* Body config */
+/*body {
+  margin: 8px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* Background Image w/ parallax effect */
+/* background-image: url("/images/FullSizeRender-3.jpeg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: calc(100vh - 100px);
+  background-size: minmax(340px, auto);
+  line-height: 1.5rem;
+}*/
+
+ul {
+  list-style: none;
+  display: flex;
+  /* padding: 0; */
+}
+
+.header_main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.menu h1 {
+  margin-left: 20px;
+}
+
+.menu-items {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}
+
+.menu-items li {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.out_cover {
+  display: grid;
+  margin: 75px 150px 110px 150px;
+  grid-template-columns: 12fr;
+  grid-template-rows: 12fr;
+  height: auto;
+  /* grid-template-areas: " hero"; */
+}
+
+.cover {
+  /* grid-area: hero; */
+  display: flex;
+  /* background: white url(/images/EazySignature.png); */
+  background-size: cover;
+  /* grid-auto-columns: 1fr 1fr;  */
+  /* text-align: center; */
+  margin-top: 10px;
+  min-height: 200px;
+  background-position: bottom right;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.cover img {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* margin: 15%; */
+  /* grid-column: span 1 /-1; */
+  width: 100%;
+  /* justify-items: center; */
+}
+
+/* Artist Profiles and Photos*/
+.sidebar {
+  display: block;
+}
+
+.sidebar_items {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8rem;
+}
+
+.header_artist_photo {
+  display: grid;
+  grid-template-columns: 1fr 12fr 1fr;
+}
+
+.header_artist_photo img {
+  width: 100%;
+}
+
+.header_artist_info {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  padding: 5%;
+  line-height: 1.7rem;
+}
+
+/* .header_artist_info li {
+  padding-right: 15px;
+} */
+
+.eazy {
+  max-width: 100%;
+
+  transition: ease;
+}
+
+.bio {
+  margin: 0 1rem;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.music_content {
+  margin-top: 2rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.music_content img {
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.music_content_item img {
+  filter: blur(0px);
+  transition: 0.533s;
+}
+.music_content_item img:hover {
+  filter: blur(4px);
+  /* transform: scale(1); */
+}
+
+.music_content_svg {
+  width: 100%;
+  position: unset;
+}
+
+.music_content_item {
+  position: relative;
+  cursor: pointer;
+}
+
+.track_info {
+  opacity: 0;
+  display: grid;
+  justify-items: center;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.track_info ul {
+  display: grid;
+}
+
+/* .track_info:hover {
+  opacity: 1;
+} */
+
+.music_links {
+  list-style: none;
+  display: flex;
+  margin: 0px -30px;
+  justify-content: center;
+}
+
+#why_not_link {
+  padding-right: 15px;
+}
+
+.music_links li {
+  max-width: 200px;
+}
+
+/* .menu_nav {
+  display: grid;
+  justify-content: center;
+}
+
+.menu_nav li {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: santos_dumont;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+} */
+
+@media (max-width: 703px) {
+  .header_main {
+    width: fit-content;
+  }
+
+  .out_cover {
+    margin: auto;
+  }
+
+  .cover img {
+    width: 350px;
+  }
+  .music_content {
+    margin-top: 2rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .music_content_svg {
+    width: 100%;
+    position: unset;
+  }
+
+  #why_not_link {
+    padding-right: 15px;
+  }
+}

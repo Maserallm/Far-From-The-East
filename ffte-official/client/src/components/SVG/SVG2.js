@@ -1,4 +1,5 @@
 import React from "react";
+import artist from "../../pages/Artist/artist.module.css";
 
 const Spotify = () => {
   return (
@@ -7,7 +8,7 @@ const Spotify = () => {
       width="1000"
       height="20"
       viewBox="74.428 1369.145 9772.44 2931.018"
-      id="music_content_svg"
+      className={artist.music_content_svg}
     >
       <path
         fill="#000000"
