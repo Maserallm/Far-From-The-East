@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
   color: black;
   font-family: "montserrat", sans-serif;
-  text-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.5);
+  /* text-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.5); */
 }
 
 *,
@@ -14,7 +14,7 @@ html {
 /* Body config */
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* overflow-y: hidden; */
   /* Background Image w/ parallax effect */
   /* background-image: url("/images/FullSizeRender-3.jpeg"); */
@@ -23,7 +23,7 @@ body {
   background-size: cover;
   /* min-height: calc(100vh - 100px); */
   min-height: auto;
-  background-size: minmax(340px, auto);
+  /* background-size: minmax(340px, auto); */
   line-height: 1.5rem;
 }
 
@@ -36,10 +36,10 @@ a {
 a:hover,
 a:active,
 a:link,
-a:visited {
+/* a:visited {
   text-decoration: none;
   background-color: white;
-}
+} */
 
 a:active,
 a:focus {

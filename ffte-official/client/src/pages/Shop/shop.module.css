@@ -1,0 +1,34 @@
+.header1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.header2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  height: 25vh;
+}
+
+.fwStyle {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+@media (max-width: 703px) {
+  .container_ {
+    margin: auto;
+    height: 50vh;
+  }
+  .header2 {
+    height: 15vh;
+  }
+
+  .fwStyle {
+    font-size: 30px;
+  }
+}

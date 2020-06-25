@@ -1,0 +1,27 @@
+.yt_landing {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.yt_land_player {
+  display: grid;
+  position: absolute;
+  top: 23%;
+  left: 25%;
+}
+
+.yt_land_playermb {
+  display: grid;
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  padding: 10px;
+}
+
+.yt_land_playermbls {
+  display: grid;
+  position: absolute;
+  top: -4%;
+  left: 10%;
+  padding: 4%;
+}

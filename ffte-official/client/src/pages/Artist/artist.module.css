@@ -1,17 +1,17 @@
 /* Body config */
-body {
+/*body {
   margin: 8px;
   overflow-x: hidden;
   overflow-y: scroll;
   /* Background Image w/ parallax effect */
-  /* background-image: url("/images/FullSizeRender-3.jpeg"); */
+/* background-image: url("/images/FullSizeRender-3.jpeg"); 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   min-height: calc(100vh - 100px);
   background-size: minmax(340px, auto);
   line-height: 1.5rem;
-}
+}*/
 
 ul {
   list-style: none;
@@ -147,7 +147,7 @@ video {
   /* transform: scale(1); */
 }
 
-#music_content_svg {
+.music_content_svg {
   width: 100%;
   position: unset;
 }
@@ -212,12 +212,25 @@ video {
   transform: scale(1.5);
 } */
 
-@media (max-width: 630px) {
+@media (max-width: 703px) {
+  .header_main {
+    width: fit-content;
+  }
+
+  .out_cover {
+    margin: auto;
+  }
+
   .cover img {
     width: 350px;
   }
-
-  #music_content_svg {
+  .music_content {
+    margin-top: 2rem;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .music_content_svg {
     width: 100%;
     position: unset;
   }

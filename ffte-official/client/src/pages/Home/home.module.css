@@ -1,24 +1,13 @@
 /* Body config */
-body {
-  margin: 8px;
-  overflow: hidden;
-  /* Background Image w/ parallax effect */
-  /* background-image: url("/images/FullSizeRender-3.jpeg"); */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  min-height: calc(100vh - 100px);
-  background-size: minmax(340px, auto);
-  line-height: 1.5rem;
-}
-
+.container 
 /* CSS for SVG Overlay */
 
 .header_wrap {
   overflow: hidden;
+  /* overflow-y: auto; */
   position: relative;
   /* margin: auto; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .title {
@@ -31,10 +20,10 @@ body {
   height: auto;
 }
 
-.transparent-text {
+.transparent_text {
   fill-opacity: 0;
-  stoke: black;
-  stroke-opacity: 0.5;
+  /* stroke: black; */
+  /* stroke-opacity: 0.5; */
 }
 
 video {
@@ -59,45 +48,45 @@ svg {
   width: 100%;
 }
 
-.cls-1 {
+.cls_1 {
   font-size: 662.98px;
   font-family: Impact;
 }
-.cls-2 {
+.cls_2 {
   letter-spacing: 0.03em;
 }
-.cls-3 {
+.cls_3 {
   letter-spacing: 0em;
 }
-.cls-4 {
+.cls_4 {
   font-size: 92.06px;
   font-family: SANTOSDUMONT, SANTOS DUMONT;
 }
-.cls-5 {
+.cls_5 {
   letter-spacing: 0.03em;
 }
-.cls-6 {
+.cls_6 {
   letter-spacing: 0em;
 }
-.cls-7 {
+.cls_7 {
   letter-spacing: -0.14em;
 }
-.cls-8 {
+.cls_8 {
   letter-spacing: 0.06em;
 }
-.cls-9 {
+.cls_9 {
   letter-spacing: 0.03em;
 }
-.cls-10 {
+.cls_10 {
   letter-spacing: -0.14em;
 }
-.cls-11 {
+.cls_11 {
   letter-spacing: 0.01em;
 }
-.cls-12 {
+.cls_12 {
   letter-spacing: -0.08em;
 }
-.cls-13 {
+.cls_13 {
   letter-spacing: 0.12em;
 }
 
